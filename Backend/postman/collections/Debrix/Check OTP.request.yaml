@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{endpoint}}/api/auth/verify-email"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "email": "ayush123@gmail.com",
+      "otp": "483921"
+    }
+order: 3788698342578776

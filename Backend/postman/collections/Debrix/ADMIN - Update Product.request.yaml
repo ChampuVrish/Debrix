@@ -1,0 +1,33 @@
+$kind: http-request
+name: ADMIN -- Update Product
+description: |-
+  Generated from cURL: curl --location --request PUT 'http://localhost:5000/api/products/PRODUCT_ID' \
+  --header 'Authorization: Bearer YOUR_ADMIN_JWT_TOKEN' \
+  --form 'name=Updated Product Name' \
+  --form 'description=Updated product description' \
+  --form 'price=129.99' \
+  --form 'category=Electronics' \
+  --form 'image=@C:/path/to/new-product-image.jpg'
+url: http://localhost:5000/api/products/PRODUCT_ID
+method: PUT
+headers:
+  Authorization: Bearer YOUR_ADMIN_JWT_TOKEN
+body:
+  type: formdata
+  content:
+    - type: text
+      key: name
+      value: Updated Product Name
+    - type: text
+      key: description
+      value: Updated product description
+    - type: text
+      key: price
+      value: "129.99"
+    - type: text
+      key: category
+      value: Electronics
+    - type: file
+      key: image
+      src: C:/path/to/new-product-image.jpg
+order: 2351788798774544

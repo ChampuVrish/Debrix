@@ -30,4 +30,4 @@ body:
     - type: file
       key: image
       src: C:/path/to/product-image.jpg
-order: 4482629026971675
+order: 7000

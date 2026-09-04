@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{endpoint}}/api/products/"
+method: GET
+order: 5175
