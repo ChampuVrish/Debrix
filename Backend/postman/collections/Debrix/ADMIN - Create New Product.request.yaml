@@ -1,0 +1,33 @@
+$kind: http-request
+name: ADMIN -- Create New Product
+description: |-
+  Generated from cURL: curl --location 'http://localhost:5000/api/products/' \
+  --header 'Authorization: Bearer YOUR_ADMIN_JWT_TOKEN' \
+  --form 'name=Sample Product' \
+  --form 'description=Product description' \
+  --form 'price=99.99' \
+  --form 'category=Electronics' \
+  --form 'image=@C:/path/to/product-image.jpg'
+url: http://localhost:5000/api/products/
+method: POST
+headers:
+  Authorization: Bearer YOUR_ADMIN_JWT_TOKEN
+body:
+  type: formdata
+  content:
+    - type: text
+      key: name
+      value: Sample Product
+    - type: text
+      key: description
+      value: Product description
+    - type: text
+      key: price
+      value: "99.99"
+    - type: text
+      key: category
+      value: Electronics
+    - type: file
+      key: image
+      src: C:/path/to/product-image.jpg
+order: 4482629026971675

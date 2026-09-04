@@ -1,0 +1,19 @@
+$kind: http-request
+name: ADMIN -- Get all users
+url: "{{endpoint}}/api/auth/login"
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"email\":\"ayush6122@gmail.com\",\r
+
+    \    \"password\":\"1234321\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: seohfoiueshfosehgosehgoisdahjk
+examples: .resources/ADMIN - Get all users.resources/examples
+order: 4000

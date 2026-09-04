@@ -1,0 +1,19 @@
+$kind: http-request
+name: Login User
+url: "{{endpoint}}/api/auth/login"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"email\":\"ayus2@gmail.com\",\r
+
+    \    \"password\":\"1234321\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: seohfoiueshfosehgosehgoisdahjk
+examples: .resources/Login User-1.resources/examples
+order: 3000
