@@ -1,10 +1,11 @@
 $kind: http-request
 name: ADMIN -- Delete Product
-description: "Generated from cURL: curl --location --request DELETE 'http://localhost:5000/api/products/PRODUCT_ID' \\\r
+description: "Generated from cURL: curl --location --request DELETE
+  'http://localhost:5000/api/products/PRODUCT_ID' \\\r
 
   --header 'Authorization: Bearer YOUR_ADMIN_JWT_TOKEN'"
 url: http://localhost:5000/api/products/6a9a910b9517e876f1b913e8
 method: DELETE
 headers:
   Authorization: Bearer YOUR_ADMIN_JWT_TOKEN
-order: 3416880608972389
+order: 6000

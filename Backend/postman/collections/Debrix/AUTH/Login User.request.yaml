@@ -1,14 +1,11 @@
 $kind: http-request
-name: Register check
-url: "{{endpoint}}/api/auth/register"
+url: "{{endpoint}}/api/auth/login"
 method: POST
 body:
   type: json
   content: "{\r
 
-    \    \"name\":\"ayush\",\r
-
-    \    \"email\":\"ayush6122@gmail.com\",\r
+    \    \"email\":\"ayus2@gmail.com\",\r
 
     \    \"password\":\"1234321\"\r
 
@@ -17,4 +14,5 @@ auth:
   type: bearer
   credentials:
     token: seohfoiueshfosehgosehgoisdahjk
-order: 2000
+examples: .resources/Login User.resources/examples
+order: 3346843922453703

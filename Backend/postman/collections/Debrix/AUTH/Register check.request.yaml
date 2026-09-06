@@ -1,10 +1,11 @@
 $kind: http-request
-name: ADMIN -- Get all users
-url: "{{endpoint}}/api/auth/login"
-method: GET
+url: "{{endpoint}}/api/auth/register"
+method: POST
 body:
   type: json
   content: "{\r
+
+    \    \"name\":\"ayush\",\r
 
     \    \"email\":\"ayush6122@gmail.com\",\r
 
@@ -15,5 +16,5 @@ auth:
   type: bearer
   credentials:
     token: seohfoiueshfosehgosehgoisdahjk
-examples: .resources/ADMIN - Get all users.resources/examples
-order: 4000
+examples: .resources/Register check.resources/examples
+order: 155504970146937

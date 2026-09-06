@@ -1,0 +1,34 @@
+$kind: http-request
+description: |-
+  Generated from cURL: curl -X POST http://localhost:5000/api/orders/ \
+    -H "Content-Type: application/json" \
+    -H "Authorization: Bearer YOUR_JWT_TOKEN" \
+    -d '{
+      "products": [
+        {
+          "productId": "PRODUCT_OBJECT_ID",
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 999,
+      "paymentId": "PAYMENT_ID"
+    }'
+url: http://localhost:5000/api/orders/
+method: POST
+headers:
+  Content-Type: application/json
+  Authorization: Bearer YOUR_JWT_TOKEN
+body:
+  type: json
+  content: |-
+    {
+        "products": [
+          {
+            "productId": "PRODUCT_OBJECT_ID",
+            "quantity": 1
+          }
+        ],
+        "totalAmount": 999,
+        "paymentId": "PAYMENT_ID"
+      }
+order: 526274005021647
